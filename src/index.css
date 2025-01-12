@@ -1,0 +1,663 @@
+/* Navbar container */
+/* General Layout */
+
+.left-container {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.result-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Marks and Accuracy Section */
+.marks-accuracy-section {
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.question-pad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.correct-tick-icon {
+  color: green;
+  font-size: 1.2rem;
+}
+
+.status-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.marks-accuracy-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.marks {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.divider {
+  color: grey;
+}
+
+.total-marks {
+  color: grey;
+}
+
+.accuracy-badge {
+  background-color: rgb(99, 226, 233);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Top Score Section */
+.top-score-section {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.top-score-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.top-score-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accuracy-green {
+  background-color: rgb(99, 226, 233);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.top-score-by {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Improve Section */
+.improve-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.practice-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.practice-button:hover {
+  background-color: #584dbd;
+}
+
+/* Visit Section */
+.visit-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.visit-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.visit-button:hover {
+  background-color: #584dbd;
+}
+
+.instructions {
+  margin-top: 10px;
+  
+  color: #7b7b7b;
+  font-family: Arial;
+}
+.improve{
+  font-weight: bolt;
+  font-size: 2cap;
+  font-family: Arial;
+  color:#000000
+}
+.visit{
+  font-weight: bolt;
+  font-size: 3cap;
+  font-family: Arial;
+}
+.result{
+  font-family: Arial;
+  font-size: 2ch;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-item
+ {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5ch;
+  
+ 
+}
+.dropdown-item{
+  font-family: Arial;
+  font-size: 1ch;
+  height:100%;
+  color:black;
+  background-color: white;
+  width: 100%;
+}
+.menu-icon,
+.dropdown-icon {
+  font-size: 1.2rem;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #000000;
+  color:white;
+  border-radius: 4px;;
+  
+}
+
+.navbar-logo .logo {
+  height: 60px;
+  cursor: pointer;
+}
+.logo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 6ch;
+}
+/* Menu items */
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adds space between icons */
+}
+
+.bell-icon {
+  font-size: 1.5rem; /* Adjust size of the bell icon */
+  color: #6a5acd; /* Purple color for the bell icon */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.bell-icon:hover {
+  color: #584dbd; /* Darker purple on hover */
+}
+.img{
+  width:100%;
+}
+/* Main Container Styling */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  width:20%;
+  margin-left: 2%;
+  height:vh;
+  box-shadow:0px 4px 6px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+.result-heading {
+  color: rgb(137, 35, 226);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+}
+/* Left Container */
+.left-container {
+  background-color: white;
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.visit-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.visit-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.visit-button:hover {
+  background-color: #8a2be2;
+}
+
+.document-icon {
+  font-size: 20px;
+}
+
+/* Practice Button Styling */
+.practice-button {
+  padding: 10px 20px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.practice-button:hover {
+  background-color: #8a2be2;
+}
+/* Right Container */
+.right-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top:2%;
+  margin-left:5%;
+  padding-top:0%;
+  top:50%;
+  
+ 
+  
+}
+.main{
+  display:flex;
+}
+/* Row Styling */
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  
+}
+
+/* Cards */
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+/* Icons */
+.icon {
+  font-size: 24px;
+  margin-top: 10px;
+  color: violet;
+}
+
+/* Buttons in Improvements */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subject-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.geography {
+  background-color: #6a5acd;
+}
+
+.politics {
+  background-color: #4682b4;
+}
+
+.current-affairs {
+  background-color: #32cd32;
+}
+
+.general-studies {
+  background-color: #ff4500;
+}
+
+.mathematics {
+  background-color: #ff6347;
+}
+
+.social-studies {
+  background-color: #daa520;
+}
+
+.english {
+  background-color: #ff69b4;
+}
+
+.history {
+  background-color: #7b68ee;
+}
+
+.economics {
+  background-color: #4169e1;
+}
+
+/* Bar Graph Placeholder */
+.bar-graph {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6fa;
+  border-radius: 5px;
+}
+.row-1{
+  height: 35%;
+}
+.row-2{
+  height:30%
+}
+.row-3{
+  height :50%}
+  .response-time-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .clock-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color:grey;
+  }
+  
+  .content {
+    margin-top: 10px;
+  }
+  
+  .time-info {
+    margin-bottom: 20px;
+  }
+  
+  .percentage {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(0, 213, 255);
+  }
+  
+  .arrow {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .std-time {
+    margin-top: 10px;
+  }
+  
+  .std-time hr {
+    border: 1px solid rgb(171, 171, 171);
+  }
+  .greytext{
+    color:#93939d;
+    font-size: 2ch;
+    font-family: Arial;
+  }
+  h3{
+    color:#cdcddd;
+    font-size:cm;
+    font-family: Arial;
+  }
+  .back{
+    background-color: rgb(105, 52, 211);
+    color:#ffffff;
+    border-radius: 5px;
+    display:block;
+    margin-bottom:10px;
+  }
+  .time {
+    color: violet;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .slow-message {
+    margin-top: 5px;
+  }
+  
+  .you {
+    color: black;
+    font-weight: 900;
+  
+    font: 1.2rem "Fira Sans", sans-serif;
+  }
+  
+  .slow {
+    color: red;
+    font-weight: bold;
+  }
+  .dash{
+    border-style: dashed;
+    background-color: #f2f1f4;
+    font-variant-numeric: stacked-fractions; 
+  }
+  
+  .staircase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 1rem;
+    color: rgb(152, 152, 152); /* Success symbol color */
+    margin-right: 10px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .main-arrow {
+    font-size: 2rem;
+    color: violet;
+    margin: 10px 0;
+  }
+ 
+
+  .number {
+    font-weight: bold;
+    background-color: #a2a2b9;
+    font-weight: bold;
+    color: #3a0dff;
+    border-radius: 2px;
+    height:10%;
+    align-items: left;
+    margin-left: 0;
+  }
+  
+  .fact {
+    color: violet;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    align-items: left;
+  }
+ 
+/* Each row */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Heading row styling */
+.heading-row .cell {
+  background-color: rgb(105, 52, 211);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Bold text styling */
+.bold-text {
+  font-weight: bold;
+}
+
+/* Difficulty levels */
+.difficulty.easy {
+  color: blue;
+  font-size:larger;
+  
+}
+
+.difficulty.medium {
+  color: rgb(238, 212, 48);
+  font-size:larger;
+}
+
+.difficulty.hard {
+ color: red;
+ font-size:larger;
+}
+
+/* Container styling for the graph and time slots */
+.graph-with-time-slots {
+  text-align: center;
+  margin-top: 0%;
+  font-family: Arial, sans-serif;
+}
+
+/* Time slots styling */
+.time-slots {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.slot {
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.blue {
+  background-color: rgb(99, 226, 233);
+}
+
+/* Graph container styling */
+.graph-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mar{
+margin-top: 7%;
+width:100%;
+}
